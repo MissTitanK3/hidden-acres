@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+
+    --background-start: #0f0c29; /* deep twilight blue */
+    --background-end: #24243e; /* dark forest green */
+    --btn-background: 200 10% 9%; /* dark button background */
+    --btn-background-hover: 200 10% 12%; /* dark button hover */
+    --foreground: 200 20% 96%; /* light text */
+  }
+
+  body {
+    background: linear-gradient(to right, var(--background-start), var(--background-end));
+    color: hsl(var(--foreground));
+  }
+
+  * {
+    @apply border-foreground/20;
+  }
+
+  .btn {
+    background-color: hsl(var(--btn-background));
+    &:hover {
+      background-color: hsl(var(--btn-background-hover));
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.animate-in {
+  animation: animateIn 0.3s ease 0.15s both;
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #555; /* Default color */
+  font-size: 16px; /* Set the size of the font */
+  padding: 10px 15px; /* Top-bottom, left-right padding */
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+  border-radius: 5px; /* Optional: adds rounded corners */
+  width: 100%; /* Optional: makes the link full width */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #0088cc; /* Color changes when hovered or focused */
+  background-color: #063d75; /* Optional: change background on hover */
+}
+
+.nav-link.active {
+  color: #ffffff; /* Active link color */
+  border-bottom: 2px solid #007bff; /* Active link background color */
+  border-radius: 0;
+}
