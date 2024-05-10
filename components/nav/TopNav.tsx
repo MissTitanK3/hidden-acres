@@ -21,7 +21,6 @@ const TopNav = (props: Props) => {
         </Button>
       </SheetTrigger>
       <SheetContent
-        side="left"
         style={{
           display: 'flex',
           flexDirection: 'column',
