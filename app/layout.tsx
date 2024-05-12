@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white">
               Hidden Acres Farm
             </h1>
-            <TopNav />
+            {/* <TopNav /> */}
           </nav>
           {children}
         </ThemeProvider>

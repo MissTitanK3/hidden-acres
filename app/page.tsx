@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Hero />
-      <section className="flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
+      <section className="rounded-3xl flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
         <h2 className={`${openSans700.className} w-full text-3xl font-bold`}>
           Welcome to Hidden Acres Farm – Your Sanctuary of Celebration
         </h2>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
+      <section className="rounded-3xl flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
         <h2 className={`${openSans700.className} w-full text-3xl font-bold`}>Explore and Connect</h2>
         <div className="flex flex-col md:flex-row items-center justify-around p-4 text-center">
           <div className="flex flex-col items-center justify-center p-4 text-center w-full md:w-1/2">
@@ -53,7 +53,7 @@ export default function Home() {
           <Image src={Shop} alt="shop" layout="fixed" objectFit="cover" height={500} className="md:mr-4" />
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
+      <section className="rounded-3xl flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
         <h2 className={`${openSans700.className} w-full text-3xl font-bold`}>A Place for Events and More</h2>
         <div className="flex flex-col md:flex-row items-center justify-around p-4 text-center">
           <Image src={Stage} alt="sunflowers" layout="fixed" objectFit="cover" height={500} className="md:mr-4" />
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
+      <section className="rounded-3xl flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
         <h2 className={`${openSans700.className} w-full text-3xl font-bold`}>Join Our Family</h2>
         <div className="flex flex-col md:flex-row items-center justify-around p-4 text-center">
           <div className="flex flex-col items-center justify-center p-4 text-center w-full md:w-1/2">
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
+      <section className="rounded-3xl flex flex-col items-center justify-center p-4 text-center m-4 mt-20 bg-[var(--background-start)]">
         <h2 className={`${openSans700.className} w-full text-3xl font-bold`}>Your Adventure Awaits</h2>
         <div className="flex flex-col items-center justify-around p-4 text-center">
           <div className="flex flex-col items-center justify-center p-4 text-center">
